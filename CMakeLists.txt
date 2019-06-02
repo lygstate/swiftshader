@@ -273,6 +273,7 @@ if(MSVC)
 else()
     set_cpp_flag("--std=c++11")
     set_cpp_flag("-fno-exceptions")
+    set_cpp_flag("-Wno-class-memaccess")
 
     list(APPEND SWIFTSHADER_COMPILE_OPTIONS
         "-Wall"
